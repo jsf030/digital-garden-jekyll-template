@@ -54,6 +54,7 @@ blockquote {
 
   p {
     margin: 0;
+    color: color.scale(#28242e, $lightness: -20%, $saturation: 10%);
   }
 }
 
@@ -136,11 +137,11 @@ li {
 
 @media (prefers-color-scheme: dark) {
 
-  $night-mode-bg: #282a36;
+  $night-mode-bg: #28242e;
   $night-mode-fg: #f8f8f2;
 
   body {
-    background-color: #282a36;
+    background-color: #28242e;
     color: $night-mode-fg;
 
     h1,
