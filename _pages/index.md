@@ -5,11 +5,10 @@ id: home
 permalink: /
 ---
 
-# Willkommen! 🌱
+# Willkommen! 🌱  
 
-<p style="padding: 3em 1em; background: #36343d; border-radius: 4px;">
-  Take a look at <span style="font-weight: bold">[[Your first note]]</span> to get started on your exploration.
-</p>
+
+>  Take a look at <span style="font-weight: bold">[[Your first note]]</span> to get started on your exploration.
 
 This digital garden template is free, open-source, and [available on GitHub here](https://github.com/maximevaillancourt/digital-garden-jekyll-template).
 
