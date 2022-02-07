@@ -34,7 +34,61 @@
        url('../assets/fonts/lora-v23-latin-700italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
        url('../assets/fonts/lora-v23-latin-700italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+/* fira-sans-regular - latin */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../assets/fonts/fira-sans-v15-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../assets/fonts/fira-sans-v15-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* fira-sans-italic - latin */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local(''),
+       url('../assets/fonts/fira-sans-v15-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../assets/fonts/fira-sans-v15-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* fira-sans-600 - latin */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local(''),
+       url('../assets/fonts/fira-sans-v15-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../assets/fonts/fira-sans-v15-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* fira-sans-600italic - latin */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: italic;
+  font-weight: 600;
+  src: local(''),
+       url('../assets/fonts/fira-sans-v15-latin-600italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../assets/fonts/fira-sans-v15-latin-600italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* fira-sans-800 - latin */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local(''),
+       url('../assets/fonts/fira-sans-v15-latin-800.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../assets/fonts/fira-sans-v15-latin-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 
+/* fira-sans-800italic - latin */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: italic;
+  font-weight: 800;
+  src: local(''),
+       url('../assets/fonts/fira-sans-v15-latin-800italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../assets/fonts/fira-sans-v15-latin-800italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 
 $color-primary: #4c95f7;
 $color-link-hover: hsl(163°, 87%, 72%);
@@ -45,7 +99,6 @@ $color-box-background: #f2ece3;
 $border-radius: 4px;
 $font-family: Lora, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
   sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
-
 
 body {
   box-sizing: content-box;
@@ -67,11 +120,18 @@ body {
 nav a,
 .site-description {
   color: #25272b;
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: 800;
 }
 
 
 time {
   display: block;
+  font-size: 1.0rem;
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
   color: $color-subtext;
   margin: 0.5em 0 1em;
 }
@@ -113,12 +173,22 @@ hr {
   background: $color-border;
 }
 
-h1,
+h1 {
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1.3;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
 h2,
 h3,
 h4,
 h5,
 h6 {
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: 600;
   line-height: 1.3;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -129,7 +199,7 @@ a {
   /* box-shadow: inset 0 -7px 0 rgba(147,255,145,.25); */
   transition: all .1s ease-in;
   /*border-bottom: 1px solid $color-border;*/
-  color: $color-primary;
+  color: #c49c4f;
   border-radius: 2px;
   &:hover {
     // color: black !important;
@@ -194,13 +264,12 @@ li {
   text-align:center;
 }
 
-
-
-  @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
 
 
   $night-mode-bg: #28242e;
   $night-mode-fg: #fafbfb;
+  $night-mode-link-preview-bg: #28242e
 
   body {
     background-color: #28242e;
@@ -227,9 +296,9 @@ li {
     }
 
     p {
-      margin: 0;
       color: #f8f8f3;
     }
+
     blockquote {
     padding: 1.5em;
     margin-top: 2.0em;
