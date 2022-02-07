@@ -339,6 +339,21 @@ li {
     .site-description {
       color: #f8f8f3;
     }
+
+    #tooltip-wrapper {
+      background: #28242e;
+      padding: 1em;
+      /*border: 1px solid #1b191f;*/
+      border-radius: 4px;
+      overflow: hidden;
+      position: absolute;
+      width: 400px;
+      height: 250px;
+      font-size: 0.8em;
+      box-shadow: 0 5px 10px #1b191f;
+      opacity: 0;
+      transition: opacity 100ms;
+    }
   }
 
 
